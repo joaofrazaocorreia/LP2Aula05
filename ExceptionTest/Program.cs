@@ -12,6 +12,7 @@ namespace ExceptionTest
                 int i = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine($"Numero inserido:{i}");
             }
+
             catch (FormatException)
             {
                 Console.WriteLine("Não inseriste um número inteiro :(");
@@ -23,6 +24,11 @@ namespace ExceptionTest
             catch (Exception e)
             {
                 Console.WriteLine("Ocorreu um problema desconhecido: " + e.Message);
+            }
+
+            finally
+            {
+                Console.WriteLine("Obrigado por ter utilizado este programa!");
             }
 
         }
