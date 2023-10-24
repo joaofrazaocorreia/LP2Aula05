@@ -9,11 +9,13 @@ namespace GunDecorations
     {
         public override int AmmoCapacity { get; }
         public override float NoiseLevel { get; }
+        public override string Name { get; }
 
         public ShotGun()
         {
             AmmoCapacity = 45;
             NoiseLevel = 20f;
+            Name = "Shotgun";
         }
     }
 }

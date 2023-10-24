@@ -8,10 +8,12 @@ namespace GunDecorations
     public class GunSilencer : GunDecorator
     {
         public override float NoiseLevel { get; }
+        public override string Name { get; }
 
         public GunSilencer(Gun gun) : base(gun)
         {
             NoiseLevel = gun.NoiseLevel * 0.2f;
+            Name = "Silenced " + gun.Name;
         }
     }
 }

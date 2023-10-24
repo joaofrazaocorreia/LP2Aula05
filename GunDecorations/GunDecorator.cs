@@ -10,12 +10,14 @@ namespace GunDecorations
         protected Gun baseGun;
         public override int AmmoCapacity { get; }
         public override float NoiseLevel { get; }
+        public override string Name { get; }
         
         public GunDecorator(Gun gun)
         {
             baseGun = gun;
             AmmoCapacity = gun.AmmoCapacity;
             NoiseLevel = gun.NoiseLevel;
+            Name = gun.Name;
         }
     }
 }

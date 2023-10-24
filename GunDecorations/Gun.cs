@@ -9,10 +9,11 @@ namespace GunDecorations
     {
         public abstract int AmmoCapacity { get; }
         public abstract float NoiseLevel { get; }
+        public abstract string Name { get; }
 
         public void Fire()
         {
-            Console.WriteLine("This weapon has " + AmmoCapacity +
+            Console.WriteLine("This " + Name + " has " + AmmoCapacity +
                             " Ammo Capacity and a Noise Level of " + NoiseLevel);
         }
     }
